@@ -54,7 +54,7 @@ async def incoming_message_f(client, message):
     user_command = message.command[0]
     g_id = message.from_user.id
     # get link from the incoming message
-    i_m_sefg = await message.reply_text("Processing...", quote=True)
+    i_m_sefg = await message.reply_text("Avundi Agu Jara...", quote=True)
     rep_mess = message.reply_to_message
     is_file = False
     dl_url = ''
@@ -79,7 +79,7 @@ async def incoming_message_f(client, message):
         LOGGER.info(dl_url)
 
     else:
-        await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🐈 <code>Reply with Direct /Torrent Link</code>")
+        await i_m_sefg.edit("<b>Hello Mowa !</b>\n\n 🐯 <code>Reply with Direct /Torrent Link</code>")
         return
     if dl_url is not None:
 
@@ -135,7 +135,7 @@ async def incoming_message_f(client, message):
             await i_m_sefg.edit_text(err_message)
     else:
         await i_m_sefg.edit_text(
-            f"**FCUK**! wat have you entered. \n<b>API Error</b>: {cf_name}"
+            f"**PORA Rey**! Endira nuv chesidi. \n<b>API Error</b>: {cf_name}"
         )
 
 
@@ -143,7 +143,7 @@ async def incoming_youtube_dl_f(client, message):
     """ /ytdl command """
     current_user_id = message.from_user.id
 
-    i_m_sefg = await message.reply_text("<code>Prrocessing...🔃</code>", quote=True)
+    i_m_sefg = await message.reply_text("<code>Uchapuko...🔃</code>", quote=True)
     # LOGGER.info(message)
     # extract link from message
     if message.reply_to_message:
@@ -160,7 +160,7 @@ async def incoming_youtube_dl_f(client, message):
         yt_dl_pass_word = None
         cf_name = None
     else:
-        await i_m_sefg.edit("<b>🐈 Oops Reply To YTDL Supported Link.</b>")
+        await i_m_sefg.edit("<b>🐈 Ayyooo Reply To YTDL Supported Link.</b>")
         return
     if dl_url is not None:
         await i_m_sefg.edit_text("<b>Getting Available Formate</b>...")
@@ -216,7 +216,7 @@ async def g_yt_playlist(client, message):
     if "youtube.com/playlist" in url:
         u_men = message.from_user.mention
         i_m_sefg = await message.reply_text(
-            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
+            f"<b>Sare Manchindi 🧖 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Upload iyenta varaku Agu</code>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
@@ -286,10 +286,10 @@ async def rename_tg_file(client, message):
                 message_to_send += "\n"
             if message_to_send != "":
                 mention_req_user = (
-                    f"<a href='tg://user?id={usr_id}'>🐈 Hey Bru!! Your Requested Files 👇</a>\n\n"
+                    f"<a href='tg://user?id={usr_id}'>🐯 Hey Mowa!! Your Requested Files 👇</a>\n\n"
                 )
                 message_to_send = mention_req_user + message_to_send
-                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @TGFilmZone</b>"
+                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @Madara_ucchiha</b>"
             else:
                 message_to_send = "<i>FAILED</i> to upload files. 😞😞"
             await message.reply_text(
@@ -300,5 +300,5 @@ async def rename_tg_file(client, message):
 
     else:
         await message.reply_text(
-            "<b> Oops 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename Avengers Endgame.mkv</code>", quote=True
+            "<b> Ayyo.. 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename ANUBIS.mkv</code>", quote=True
         )
