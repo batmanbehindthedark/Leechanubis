@@ -109,7 +109,7 @@ async def status_message_f(
             f"<b>RAM:</b> <code>{ram}%</code> <b>CPU:</b> <code>{cpu}%</code>\n"
         )
         if msg == "":
-            msg = "🤷‍♂️ No Active, Queued or Paused TORRENTs"
+            msg = "🤷‍♂️ M Levu, Motham Dolle"
             msg = ms_g + "\n" + msg
             await to_edit.edit(msg)
             break
