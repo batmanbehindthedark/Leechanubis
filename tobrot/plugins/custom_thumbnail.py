@@ -42,7 +42,7 @@ async def save_thumb_nail(client, message):
             + "This image will be used in the upload, till /clearthumbnail."
         )
     else:
-        await ismgs.edit("❌ Reply to a photo to save custom thumbnail")
+        await ismgs.edit("❌ bane Pani chestundi kani ni pani chudu")
 
 
 async def clear_thumb_nail(client, message):
