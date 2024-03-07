@@ -15,7 +15,7 @@ async def new_join_f(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Channel', url='https://t.me/Telugudubbing_Movies')
+                        InlineKeyboardButton('Channel', url='https://t.me/TG_Movies4u')
                     ]
                 ]
                )
