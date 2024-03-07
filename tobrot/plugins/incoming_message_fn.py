@@ -289,7 +289,7 @@ async def rename_tg_file(client, message):
                     f"<a href='tg://user?id={usr_id}'>🐯 Hey Mowa!! Your Requested Files 👇</a>\n\n"
                 )
                 message_to_send = mention_req_user + message_to_send
-                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @Madara_ucchiha</b>"
+                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @TG_Movies4u"
             else:
                 message_to_send = "<i>FAILED</i> to upload files. 😞😞"
             await message.reply_text(
@@ -300,5 +300,5 @@ async def rename_tg_file(client, message):
 
     else:
         await message.reply_text(
-            "<b> Ayyo.. 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename ANUBIS.mkv</code>", quote=True
+            "<b> Ayyo.. 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename ACHYUTH.mkv</code>", quote=True
         )
